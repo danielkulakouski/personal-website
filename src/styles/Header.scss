@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 20px;
+    height: $header-height;
+    background-color: #6666ff;
+}
+
+.headerLink {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    // padding-right: 20px;
+    padding-left: 20px;
+}
+
+// .active-link {
+//     text-decoration: underline;
+//     text-underline-offset: 10px;
+// }
+
+// background-image: linear-gradient(
+//     to bottom right,
+//     #4affde 0%, #5b9dff, #d06bff, #ff34d2 100%
+// );
+// background-size: 200% 200%;
+// animation: movingGradient 10s linear infinite alternate;
+
+// @keyframes movingGradient {
+//     from { background-position: 0 0; }
+//     to { background-position: 100% 100%; }
+// }

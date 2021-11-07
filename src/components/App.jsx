@@ -1,22 +1,31 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import '../styles/styles.css';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
+import '../styles/styles.scss';
+import Home from './sections/Home';
+import About from './sections/About';
+import Projects from './sections/Projects';
+import Header from './Header';
 
-function App() {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-      </Switch>
-    </Router>
-  );
-}
+const App = () => (
+    <React.Fragment>
+        <Header />
+        <div className="container">
+            <div className="section">
+                <div className="content">
+                    <Home id="home" />
+                </div>
+            </div>
+            <div className="section">
+                <div className="content">
+                    <About id="about" />
+                </div>
+            </div>
+            <div className="section">
+                <div className="content">
+                    <Projects id="projects" />
+                </div>
+            </div>
+        </div>
+    </React.Fragment>
+);
 
 export default App;
