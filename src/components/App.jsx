@@ -5,6 +5,7 @@ import Home from './sections/Home';
 import About from './sections/About';
 import Projects from './sections/Projects';
 import Header from './Header';
+import InProgress from './sections/InProgress';
 
 const App = () => (
     <React.Fragment>
@@ -17,6 +18,11 @@ const App = () => (
             </div>
             <div className="section">
                 <div className="content">
+                    <InProgress id="inProgress" />
+                </div>
+            </div>
+            {/* <div className="section">
+                <div className="content">
                     <About id="about" />
                 </div>
             </div>
@@ -24,7 +30,7 @@ const App = () => (
                 <div className="content">
                     <Projects id="projects" />
                 </div>
-            </div>
+            </div> */}
         </div>
     </React.Fragment>
 );

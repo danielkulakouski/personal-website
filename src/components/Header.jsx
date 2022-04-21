@@ -4,8 +4,8 @@ const Header = () => (
     <div className="header">
         <div>
             <a href="#home" className="headerLink">Home</a>
-            <a href="#about" className="headerLink">About</a>
-            <a href="#projects" className="headerLink">Projects</a>
+            {/* <a href="#about" className="headerLink">About</a>
+            <a href="#projects" className="headerLink">Projects</a> */}
         </div>
     </div>
 );
