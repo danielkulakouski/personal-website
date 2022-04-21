@@ -1,5 +1,9 @@
 .container .section:nth-child(3) {
-    background: #FFD9BD url('../../back.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-  }
+  background: linear-gradient(
+    to bottom right,
+    #403F44, #1E1B32
+  ); // need to change header colour to make this look good later
+  // background: #FFD9BD url('../../back.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}

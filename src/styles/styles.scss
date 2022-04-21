@@ -5,7 +5,8 @@
 @import './sections/Projects';
 
 html{
-  font-family:Arial,helvetica,sans-serif;
+  // font-family:Arial,helvetica,sans-serif;
+  font-family: monospace,sans-serif;
 }
 
 body {
@@ -31,7 +32,7 @@ html {
   width: 100%;
   height: 100%;
   scroll-snap-align: start;
-  background-blend-mode: multiply;
+  // background-blend-mode: multiply;
 }
 
 .container .section .content {

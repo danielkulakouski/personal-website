@@ -1,51 +1,103 @@
 .container .section:nth-child(1) {
-    background: #918CFF url('../../back.jpg');
+    // width: inherit;
+    // height: inherit;
+    // position: relative;
+    background: linear-gradient(
+        to bottom right,
+        #6889FF, #C668FF
+    );
+    // background: #918CFF url('../../back.jpg');
     background-size: 100%;
     background-attachment: fixed;
+    // padding: 0;
+    // margin: 0;
+    // overflow: hidden;
+}
+
+.testt {
+    width: 98vw;
+    height: 200px;
+    // height: 98vh;
+    position: relative!important;
 }
 
 .home-section {
+    margin-top: -45%;
+    margin-left: -20%;
+    // position: relative;
     h1 {
-        font-size: 70px;
+        font-size: clamp(50px, 5vw, 5vw);
+        // font-size: 5vw;
         margin: 0;
         padding: 0;
-        // text-shadow: 5px 5px black;
-    }
-    h3 {
-        // text-shadow: 2px 2px black;
     }
     .home-text {
-        width: 100%;
-        padding: 50% 40%;
+        width: 600px;
+        height: 100%;
+        font-size: clamp(15px, 1.2vw, 1.2vw);
+        // font-size: 1.2vw;
+
+        .typing {
+            width: 10ch;
+            // animation: typing 0.7s steps(5);
+            overflow: hidden;
+            // border-right: solid 2px;
+        }
+
+        padding: 55% 0 0 40%;
         position: relative;
         z-index: 2;
     }
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes typing {
+    from { width : 0ch; }
 }
 
 .profile-pic {
-    // margin: 0;
-    // padding: 0;
-    width: 100%;
+    // width: 30vw;
+    // width: 100%;
+    // min-width: 30vw;
+    // width: 100%;
+    // height: 100%;
+    //   min-height: 30vw;
+    // width: 35vw;
+    // height: 35vw;
+    //   max-width: 100ch;
+    //   max-height: 100ch;
+    position: absolute;
+    right: 17%;
+    top: 50%;
+
+
+    width: 30vw;
     background: #b3b3ff;
-    position: relative;
-    z-index: 1;
+    
+    // z-index: 1;
+    // background-image: url('../../transparent-profile.png');
+    // background-repeat: no-repeat;
 }
 
 .profile-container {
-    // margin: 0;
-    // padding: 0;
-    display: inline-block;
-    position: relative;
+    // display: block;
+    // width: 80%;
+    // width: 100%;
+    // height: 100%;
+    // width: 30vw;
+    // position: relative;
+    // bottom: 350px;
+    // top: 30%;
+    // left: 115%;   
 }
 
 .profile-container::before {
-    // margin: 0;
-    // padding: 0;
-    position: absolute;
-    border: 10px solid white;
-    width: 100%;
-    height: 100%;
-    top: -10%;
-    right: -15%;
-    content: '';
+    // position: absolute;
+    // border: 10px solid rgba(255, 255, 255, 0.4);
+    // width: 100%;
+    // height: 100%;
+    // top: -10%;
+    // right: -15%;
+    // content: '';
 }

@@ -5,7 +5,9 @@
     justify-content: flex-end;
     padding: 0 20px;
     height: $header-height;
-    background-color: #6666ff;
+    background-color: $header-colour;
+
+    // border-bottom: solid white 1px;
 }
 
 .headerLink {

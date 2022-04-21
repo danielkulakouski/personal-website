@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/styles.scss';
+import 'animate.css';
 import Home from './sections/Home';
 import About from './sections/About';
 import Projects from './sections/Projects';
