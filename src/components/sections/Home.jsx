@@ -14,7 +14,7 @@ const Home = () => {
 
     return(
         <div>
-            <div className='testt'>
+            <div className='profile-container'>
                 <img src={profilePic} alt="profile pic" className="profile-pic" />
             </div>
         
@@ -25,7 +25,9 @@ const Home = () => {
                     cursor={true}
                     sequence={['Daniel Kulakouski']}
                     wrapper="h1"
+                    className="home-name"
                 />
+                {console.log("test")}
             </div>
             {/* <animated.div className="profile-container" style={{ transform: props.xy.to(trans1) }}> */}
                 {/* <animated.div className="profile-pic" style={{ transform: props.xy.to(trans1) }} /> */}
