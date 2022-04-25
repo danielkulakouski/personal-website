@@ -1,10 +1,13 @@
-.container .section:nth-child(1) {
+#home {
     background: linear-gradient(
         to bottom right,
         #6889FF, #C668FF
     );
     background-size: 100%;
     background-attachment: fixed;
+
+    position: relative;
+    z-index: -1;
 }
 
 .home-section {
@@ -28,12 +31,18 @@
 
 .profile-pic {
     z-index: 1;
-    background: #b3b3ff;
+    background: $picture-colour;
+}
+
+.profile-border {
+    z-index: 1;
+    background-image: url("../../frame.png");
+    background-repeat: no-repeat;
 }
 
 .profile-container {
     width: 98vw;
-    height: 200px;
+    height: 28vh;
     position: relative;
     text-align: center;
     top: 7vh;
@@ -45,6 +54,17 @@
         right: 17%;
         top: 50%;
         width: 30vw;
+        height: 32vw;
+        background-position: center;
+    }
+
+    .profile-border {
+        position: absolute;
+        right: 17%;
+        top: 50%;
+        width: 40vw;
+        height: 42vw;
+        background-position: center;
     }
 
     .home-section {

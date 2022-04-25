@@ -1,3 +1,15 @@
 .inProgress {
   padding: 20px;
 }
+
+#inProgress {
+  background: linear-gradient(
+    to bottom right,
+    #5B7FFF, #33CCFC
+  );
+    background-size: cover;
+    background-attachment: fixed;
+
+    position: relative;
+    z-index: -1;
+}
